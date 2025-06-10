@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: Inter;
+    box-sizing: border-box;
+}
+
+.form {
+    @apply flex flex-col justify-around items-center gap-3 m-10 py-4 bg-zinc-600 rounded-md 
+    bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-70 border border-gray-100
+    max-sm:w-full md:w-[70%] xl:w-[35%] 
+}
+
+.form-input {
+    @apply w-[75%] m-2 p-4 bg-zinc-900 text-blue-400 placeholder-emerald-400 
+    rounded-[5px] shadow-lg shadow-zinc-500 font-mono
+}
+
+.form-submit-button {
+    @apply w-[30%] h-[10%] rounded-[5px] bg-emerald-400 text-zinc-900 font-mono font-bold 
+    text-lg p-2 hover:bg-emerald-600 focus:text-white focus:bg-emerald-800
+}
